@@ -1,0 +1,56 @@
+.command-contact__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.command-contact__text {
+  margin-bottom: 16px;
+}
+
+.command-contact__icons {
+  fill: #afb1b8;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.command-contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.team-list li:last-child {
+  margin-right: 0;
+}
+
+.command-contact__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.command-contact__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--body-color);
+  border-radius: 50%;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.command-contact__link:hover .command-contact__icons,
+.command-contact__link:focus .command-contact__icons {
+  fill: var(--body-color);
+}
+
+.command-contact__item:not(:last-child) {
+  margin-right: 10px;
+}

@@ -1,0 +1,171 @@
+/*--------------------- Стилизация футера --------------------------*/
+
+.footer {
+  background-color: var(--color-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo.link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-list .address {
+  color: var(--body-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-list .nav {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer:hover,
+.footer:focus,
+.footer-list .address:hover,
+.footer-list .address:focus,
+.footer-list .nav:hover,
+.footer-list .nav:focus {
+  color: var(--accent-color);
+}
+
+address {
+  font-style: normal;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-mailo {
+  margin-bottom: 9px;
+}
+
+.footer-mailo .nav.link {
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-address {
+  margin-bottom: 9px;
+}
+
+.footer-title {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-title-div {
+  display: block;
+}
+
+.container-footer-first {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-socials-icons {
+  fill: var(--body-color);
+}
+
+.footer-first {
+  margin-right: 70px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+}
+
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/*--------------------- Оформление формы в футере --------------------------*/
+.footer-subscribe-container {
+  margin-left: auto;
+}
+
+.footer-subscribe-caption {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--body-color);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hidden-caption {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.subscribe-form-email {
+  background-color: var(--color-footer);
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.15);
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.subscribe-form-email:hover,
+.subscribe-form-email:focus {
+  border-color: var(--accent-color);
+  outline: 0;
+}
+
+.footer-button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-button-icon {
+  margin-left: 10px;
+}

@@ -1,0 +1,117 @@
+header {
+  border-bottom: 1px solid var(--header-line);
+}
+
+/* Стилизация навигации сайта */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.site-nav-link {
+  position: relative;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.site-nav-link.current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.nav-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-info {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-navv {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.info {
+  color: var(--primary-text-color);
+  /* display: flex; */
+}
+
+.info {
+  margin-left: 50px;
+}
+
+.site-navv-list {
+  display: flex;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.studio-link {
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.studio-list {
+  display: flex;
+  align-items: center;
+}
+
+.studio-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.studio-item:hover .studio-icon,
+.studio-item:focus .studio-icon {
+  fill: var(--accent-color);
+}

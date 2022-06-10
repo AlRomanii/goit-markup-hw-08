@@ -1,0 +1,47 @@
+/* ---------Прячем заголовки-------------------------- */
+
+.section-privilege__list {
+  display: flex;
+}
+
+.section-privilege__list li {
+  width: 270px;
+}
+
+.section-privilege__list .item {
+  margin-right: 30px;
+}
+
+.section-privilege__list .item:nth-child(4n) {
+  margin-right: 0;
+}
+/*-------- Стилизация главной страницы сайта ----------*/
+
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--color-footer);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+}
+
+.hero__tittle {
+  font-family: 'Roboto';
+  color: var(--body-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 30px;
+}
