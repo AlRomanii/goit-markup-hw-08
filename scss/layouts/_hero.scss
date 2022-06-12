@@ -17,31 +17,57 @@
 // }
 /*-------- Стилизация главной страницы сайта ----------*/
 
-// .hero {
-//   text-align: center;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   background-color: var(--color-footer);
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
+.hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-footer);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header-img-mob1x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-//   max-width: 1600px;
-//   height: 600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url('../images/hero.jpg');
-// }
+  margin-left: auto;
+  margin-right: auto;
 
-// .hero__tittle {
-//   font-family: 'Roboto';
-//   color: var(--body-color);
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   text-transform: uppercase;
-//   letter-spacing: 0.06em;
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
 
-//   margin-bottom: 30px;
-// }
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/header-img-tab1x.jpg');
+  }
+}
+
+.hero__tittle {
+  font-family: 'Roboto';
+  color: var(--body-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
