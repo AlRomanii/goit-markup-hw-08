@@ -1,40 +1,44 @@
 /*------------------- Стилизация кнопок портфолио ---------------------*/
-// .portfolio {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.portfolio {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 // .portfolio-list {
 //   margin-top: 50px;
 // }
 
-// .portfolio-buttons {
+.portfolio-buttons {
+  color: var(--title-text-color);
+  cursor: pointer;
 
-//   color: var(--title-text-color);
-//   cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
 
-//   font-family: 'Roboto';
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.63;
-//   letter-spacing: 0.03em;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
 
-//   border: 0;
-//   border-radius: 4px;
-//   padding: 6px 22px;
+  transition: box-shadow var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+}
 
-//   transition: box-shadow var(--transition-duration) var(--transition-timing-function),
-//     background-color var(--transition-duration) var(--transition-timing-function),
-//     color var(--transition-duration) var(--transition-timing-function);
-// }
-
-// .portfolio-buttons:hover,
-// .portfolio-buttons:focus {
-//   background: var(--accent-color);
-//   color: var(--body-color);
-//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//     0px 2px 2px rgba(0, 0, 0, 0.12);
-// }
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  background: var(--accent-color);
+  color: var(--body-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 // .portfolio-title {
 //   font-size: 18px;
@@ -43,10 +47,37 @@
 //   margin-bottom: 4px;
 // }
 
-// .portfolio-menu {
-//   display: flex;
-//   justify-content: center;
-// }
+.portfolio-menu {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+}
+
+.filter-list__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  justify-content: center;
+  display: inline-block;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.filter-list__item:last-child {
+  margin-right: 0;
+}
 
 // .portfolio-thumb {
 //   position: relative;
@@ -87,18 +118,10 @@
 //   transition: transform var(--transition-duration) var(--transition-timing-function);
 // }
 
-// .portfolio-menu li {
-//   margin-right: 8px;
-// }
-
 // .portfolio-link:hover,
 // .portfolio-link:focus {
 //   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 //     1px 4px 6px rgba(0, 0, 0, 0.16);
-// }
-
-// .portfolio-menu li:last-child {
-//   margin-right: 0;
 // }
 
 // .portfolio-link {
@@ -115,9 +138,9 @@
 
 /*------------------ Стилизация секции портфолио ---------------------*/
 
-// .portfolio-list .list-about {
-//   color: var(--primary-text-color);
-// }
+.portfolio-list .list-about {
+  color: var(--primary-text-color);
+}
 
 // .portfolio-list h3 {
 //   font-size: 18px;
@@ -130,10 +153,15 @@
 //   line-height: 1.88;
 // }
 
-// .portfolio-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.portfolio-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+}
 
 // .portfolio-list li {
 //   margin-right: 30px;
