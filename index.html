@@ -31,13 +31,12 @@
           </a>
           <button
             type="button"
-            class="menu-button"
+            class="menu-button js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
             data-menu-button
           >
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
               <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
@@ -52,7 +51,18 @@
           </ul>
           <!-- Мобильное меню -->
 
-          <div class="mobile-menu" id="mobile-menu" menu-button>
+          <div class="mobile-menu js-menu-container" id="mobile-menu" menu-button>
+            <button
+              type="button"
+              class="menu-button js-close-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              data-menu-button
+            >
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
             <ul class="mobile-menu__nav list">
               <li class="mobile-menu__nav--item">
                 <a href="./index.html" class="mobile-menu__nav--link link nav__link--active"
@@ -98,7 +108,10 @@
         <div class="nav-info">
           <ul class="list site-navv-list">
             <li class="studio-item">
-              <a class="studio-link site-navv list link info" href="mailto:info@devstudio.com">
+              <a
+                class="studio-link-mailo studio-link site-navv list link info"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="studio-icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-list_footer"></use>
                 </svg>
@@ -106,7 +119,10 @@
               >
             </li>
             <li class="studio-item">
-              <a class="studio-link site-navv list link info" href="tel:+380961111111">
+              <a
+                class="studio-link-tel studio-link site-navv list link info"
+                href="tel:+380961111111"
+              >
                 <svg class="studio-icon" width="12" height="16">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
@@ -665,6 +681,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -123,7 +123,7 @@ textarea {
 .custom-checkbox {
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,11 +228,11 @@ textarea {
     rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-timing) var(--transition-function);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
 
   @media screen and (max-width: 1199px) {
     max-width: 450px;
-    max-height: 609px;
+    // max-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
