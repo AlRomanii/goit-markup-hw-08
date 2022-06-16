@@ -292,7 +292,7 @@ img {
 }
 
 .menu-button.is-open .icon-close {
-  display: bloke;
+  display: block;
 }
 
 .menu-button.is-open .icon-menu {
@@ -921,6 +921,20 @@ header {
 @media screen and (max-width: 1199px) {
   .info {
     padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-navv-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
