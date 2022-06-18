@@ -9,9 +9,9 @@
   }
 }
 
-// .portfolio-list {
-//   margin-top: 50px;
-// }
+.portfolio-list {
+  margin-top: 40px;
+}
 
 .portfolio-buttons {
   color: var(--title-text-color);
@@ -48,7 +48,7 @@
 }
 
 .portfolio-menu {
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
   margin-bottom: -15px;
 
   @media screen and (min-width: 768px) {
@@ -71,7 +71,7 @@
   justify-content: center;
   display: inline-block;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
